@@ -1,21 +1,12 @@
 @echo off
-chcp 65001 >nul
-title Crypto Monitor (terminal)
-pushd "%~dp0"
+REM Ativa a venv e roda com variáveis fixas (edite aqui se quiser)
+call .venv\Scripts\activate
 
-where py >nul 2>nul
-if %errorlevel%==0 (
-  py monitor_crypto.py
-  goto :fim
-)
-where python >nul 2>nul
-if %errorlevel%==0 (
-  python monitor_crypto.py
-  goto :fim
-)
+set MONITOR_PAIRS=BTCUSDT,ETHUSDT,SOLUSDT
+set INTERVALO_SEG=5
+set SAVE_CSV=1
 
-echo [ERRO] Python nao encontrado. Instale pelo Microsoft Store (py) ou python.org.
-pause
-
-:fim
-popd
+python monitor_crypto.py
+echo.
+echo (Pressione qualquer tecla para sair)
+pause >nul
