@@ -7,6 +7,8 @@ Um monitor simples e privado de criptomoedas no terminal, usando a **API públic
 Feito em Python com suporte a execução direta no Windows via `.bat`.
 
 ---
+![CI](https://github.com/therunnas/crypto-monitor-simple/actions/workflows/ci.yaml/badge.svg)
+
 
 ## 📸 Preview
 
