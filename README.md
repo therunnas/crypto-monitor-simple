@@ -31,3 +31,28 @@ Feito em Python com suporte a execução direta no Windows via `.bat`.
 - Dependências:
   ```bash
   pip install requests tabulate
+
+```bash
+python -m venv .venv && source .venv/Scripts/activate && pip install -r requirements.txt
+
+
+*(no Windows CMD use `.\.venv\Scripts\activate`)*
+
+---
+
+## 3) Script de exemplo com variáveis (rodar com ENV)
+Ajuda quem quer customizar sem editar o .py.
+
+**Git Bash:**
+```bash
+cd "/c/Users/vinicius.macaneiro/Documents/GitHub/crypto-monitor-simple"
+cat > examples.sh << 'EOF'
+# Exemplo: pares customizados, intervalo 5s, salvar CSV
+export MONITOR_PAIRS="BTCUSDT,SOLUSDT,PEPEUSDT"
+export INTERVALO_SEG=5
+export SAVE_CSV=1
+python monitor_crypto.py
+EOF
+git add examples.sh
+git commit -m "Add examples.sh with ENV usage"
+git push
