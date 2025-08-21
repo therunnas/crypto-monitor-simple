@@ -39,3 +39,10 @@ ETHUSDT 4.100,78       +0,57%    4.250     3.950       856.000
 ## 📜 Licença
 [MIT](LICENSE)
 
+<p align="center">
+  <img src="https://github.com/therunnas/crypto-monitor-simple/assets/TVRjMU5UYzRNREV6TlE9PV8xMjY5Mjk2.gif" width="150"/>
+</p>
+
+<h3 align="center">Binance Monitor - Conta Verificada ✅</h3>
+
+
